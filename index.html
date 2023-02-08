@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anderson Jimenez">
+    <meta name="description" content="This is a game with dice player vs player">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="left cnt">
+            <div>
+                <h2 class="player0">Player 1</h2>
+                <p class="totalValueP0 txt total">5</p>
+            </div>
+            <div class="currentTable">
+                <p>Current</p>
+                <p class="currentValueP0 txt curr">2</p>
+            </div>
+        </div>
+        <div class="right cnt">
+            <div>
+                <h2 class="player1">Player 2</h2>
+                <p class="totalValueP1 txt total">10</p>
+            </div>
+            <div class="currentTable">
+                <p>Current</p>
+                <p class="currentValueP1 txt curr">0</p>
+            </div>
+        </div>
+
+        <button class="btnNewGame btn">💪 New Game</button>
+
+        <button class="btnRoll btn">🎲 Roll Dice</button>
+
+        <button class="btnHold btn">🤚 Hold</button>
+
+        <img src="./img/dice-1.png" alt="dice" class="diceImg hidden" width="100" height="100">
+    </main>
+
+    <div class="modal back">
+        <button class="cancelModal">&times;</button>
+        <h1>You are the Winner!!!</h1>
+        <p>🎉Congratulation you are the best!!!🎉✨</p>
+    </div>
+    <div class="overlay back"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
